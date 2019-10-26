@@ -6,7 +6,7 @@ var 	express =require ("express"),
 		mongoose.connect("mongodb://localhost:27017/yalp-camp", { useNewUrlParser: true,useUnifiedTopology: true,
 	useCreateIndex: true});
 	app.set("view engine","ejs");
-												app.use(bodyParser.urlencoded({extended: 	true}));
+	app.use(bodyParser.urlencoded({extended: true}));
 
 
 //schema set  up
